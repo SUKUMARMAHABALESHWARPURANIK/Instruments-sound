@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styles.css"> <!-- Add a link to your custom CSS file -->
+    <title>Drumkitgame</title>
+</head>
+<style>
+    body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+footer {
+    margin-top: auto;
+    text-align: center;
+    background-color: #f8f9fa; /* Optional: Add background color to the footer */
+    padding: 10px; /* Optional: Add some padding to the footer */
+    background-color: blue;
+    color:white;
+}
+
+
+
+footer {
+  color: #dbedf3;
+  font-family: sans-serif;
+}
+
+.F {
+  background-image: url("images/flute.jpeg");
+  background-size: cover;
+  background-position: center center;
+}
+
+.T {
+  background-image: url("images/tabla.jpeg");
+  background-size: cover;
+  background-position: center center;
+}
+
+.P {
+  background-image: url("images/p.jpeg");
+  background-size: cover;
+  background-position: center center;
+}
+
+.V {
+  background-image: url("images/v.jpeg");
+  background-size: cover;
+  background-position: center center;
+}
+
+.Tr {
+  background-image: url("images/tr.jpeg");
+  background-size: cover;
+  background-position: center center;
+}
+
+.Sa {
+  background-image: url("images/sa.jpeg");
+  background-size: cover;
+  background-position: center center;
+}
+
+.G {
+  background-image: url("images/gui.jpeg");
+  background-size: cover;
+  background-position: center center;
+}
+
+.set {
+  margin: 10% auto;
+}
+
+
+.drum {
+  outline: none;
+  border: 10px solid #404b69;
+  font-size: 1rem;
+  font-family: "Arvo", cursive;
+  line-height: 2;
+  font-weight: 900;
+  color: black;
+  text-shadow: 3px 0 #dbedf3;
+  border-radius: 15px;
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  margin: 10px;
+  background-color: white;
+}
+.drum:hover{
+    transform: scale(1.2);
+}
+.pressed{
+    background-color:aqua;
+}
+
+</style>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mx-auto">
+                <div class="card card-body text-center mt-5">
+                    <h1 class="heading display-5 pb-3">Instruments Sound Generator</h1>
+
+                </div>
+                <div class="set">
+                <button class="F drum">Flute</button>
+                <button class="T drum">Tabla</button>
+                <button class="P drum">Piano</button>
+                <button class="V drum">Violin</button>
+                <button class="Tr drum">Trumpet</button>
+                <button class="Sa drum">Saxophone</button>
+                <button class="G drum">Guitar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        &copy; 2023
+    </footer>
+</body>
+<script src="app.js"></script>
+
+</html>
